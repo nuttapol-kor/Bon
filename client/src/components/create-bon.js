@@ -14,7 +14,7 @@ function CreateBon() {
             bon: bon
         }
 
-        axios.post('http://localhost:5000/bons/create-bon', bonObj).then(res => console.log(res.data))
+        axios.post('https://bon-mern.herokuapp.com/bons/create-bon', bonObj).then(res => console.log(res.data))
 
         console.log(`owner: ${owner}, bon: ${bon}`)
         setOwner('')

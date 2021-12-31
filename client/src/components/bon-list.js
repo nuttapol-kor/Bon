@@ -7,7 +7,7 @@ function BonList() {
   const [bons, setBons] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/bons")
+      .get("https://bon-mern.herokuapp.com/bons")
       .then((res) => {
         setBons(res.data);
       })

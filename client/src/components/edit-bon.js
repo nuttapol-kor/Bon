@@ -11,7 +11,7 @@ function EditBon() {
     let navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://localhost:5000/bons/edit-bon/' + id).then(res => {
+        axios.get('https://bon-mern.herokuapp.com/bons/edit-bon/' + id).then(res => {
             setOwner(res.data.owner)
             setBon(res.data.bon)
         }).catch((error) => {

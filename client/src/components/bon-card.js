@@ -6,7 +6,7 @@ import axios from 'axios'
 
 function BonCard({bon}) {
     const deleteBon = () => {
-        axios.delete('http://localhost:5000/bons/delete-bon/' + bon._id).then((res) => {
+        axios.delete('https://bon-mern.herokuapp.com/bons/delete-bon/' + bon._id).then((res) => {
             console.log('Deleted!!')
             window.location.reload(false)
         }).catch((error) => {
